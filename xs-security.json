@@ -1,0 +1,18 @@
+{
+  "xsappname": "capmjob",
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.jobscheduler",
+      "description": "Allows access to job scheduler"
+    }
+  ],
+  "role-templates": [
+    {
+      "name": "JobSchedulerAdmin",
+      "description": "Administrator for Job Scheduler",
+      "scope-references": [
+        "$XSAPPNAME.jobscheduler"
+      ]
+    }
+  ]
+}
